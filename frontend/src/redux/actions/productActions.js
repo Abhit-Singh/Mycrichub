@@ -57,8 +57,8 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-
-    await axios.delete(`/api/products/${id}`, config);
+    console.log(id)
+    //await axios.delete(`/api/products/${id}`, config);
 
     dispatch({ type: actions.PRODUCT_DELETE_SUCCESS });
   } catch (error) {
