@@ -144,7 +144,7 @@ export const deleteProduct = asyncHandler(async (req, res) => {
   }
   console.log(req.params.id);
   console.log(product);
-  await Product.findOneAndDelete({id:req.params.id});
+  await Product.findOneAndDelete({_id:req.params.id});
 
   res.status(201).json({ message: "Product deleted" });
 });
