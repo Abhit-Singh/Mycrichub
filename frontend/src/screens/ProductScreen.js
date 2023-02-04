@@ -14,7 +14,6 @@ import {
 import { listProductDetails } from "../redux/actions/productActions";
 import Loading from "../components/Loading";
 import Message from "../components/Message";
-import products from "../products";
 import Rating from "../components/Rating";
 import { addToCart } from "../redux/actions/cartActions";
 import { createProductReview } from "../redux/actions/productActions";
